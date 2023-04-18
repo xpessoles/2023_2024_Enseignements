@@ -20,13 +20,13 @@
 %% \usepackage[english=british]{csquotes}	% English quotes
 
 % Load packages for testing
-\usepackage{blindtext}
+%\usepackage{blindtext}
 %\usepackage{showframe} % Uncomment to show boxes around the text area, margin, header and footer
 %\usepackage{showlabels} % Uncomment to output the content of \label commands to the document where they are used
 
 % Load the bibliography package
-%%\usepackage{kaobiblio}
-%%\addbibresource{minimal.bib} % Bibliography file
+\usepackage{kaobiblio}
+\addbibresource{Cy_01_ModelisationSystemes.bib} % Bibliography file
 
 % Load mathematical packages for theorems and related environments
 \usepackage{kaotheorems}
@@ -154,9 +154,12 @@
 %\chapter{Second Chapter}
 
 
+
 \marginlayout
 \graphicspath{{\repStyle/png/}}
 
+
+\pagestyle{xp.scrheadings}
 
 
 %\input{\repStyle/Cycle_01_Entete}
@@ -167,6 +170,7 @@
 \setchapterpreamble[u]{\margintoc}
 \chapter{Modélisation des systèmes mutliphysiques}
 
+	
 \graphicspath{{\repStyle/png/}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_01_Generalites/Cours/images/}}
 \input{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_01_Generalites/Cours/cours_v2}
 
@@ -195,7 +199,7 @@
 % The bibliography needs to be compiled with biber using your LaTeX editor, or on the command line with 'biber main' from the template directory
 
 %%\defbibnote{bibnote}{Here are the references in citation order.\par\bigskip} % Prepend this text to the bibliography
-%%\printbibliography[heading=bibintoc, title=Bibliography, prenote=bibnote] % Add the bibliography heading to the ToC, set the title of the bibliography and output the bibliography note
+%\printbibliography[heading=bibintoc, title=Bibliography, prenote=bibnote] % Add the bibliography heading to the ToC, set the title of the bibliography and output the bibliography note
 
 %%----------------------------------------------------------------------------------------
 %%	INDEX

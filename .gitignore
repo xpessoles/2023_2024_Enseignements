@@ -9,3 +9,5 @@
 *.mw
 *.gz
 *.toc
+*.xml
+*.bcf
