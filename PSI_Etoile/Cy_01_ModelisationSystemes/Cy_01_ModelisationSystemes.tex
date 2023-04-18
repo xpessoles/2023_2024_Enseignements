@@ -154,25 +154,62 @@
 %\chapter{Second Chapter}
 
 
-
+\setcounter{margintocdepth}{\sectiontocdepth}
 \marginlayout
 \graphicspath{{\repStyle/png/}}
-
 
 \pagestyle{xp.scrheadings}
 
 
 %\input{\repStyle/Cycle_01_Entete}
-\setcounter{margintocdepth}{\sectiontocdepth}
 
+
+%%%%%
+\newcommand{\repExo}{Application_01_ROV}
+\newcommand{\nomExo}{Application_01_ROV}
+
+
+%%%%%
+
+
+% ======= COURS ======= 
+\graphicspath{{\repStyle/png/}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_01_Generalites/Cours/images/}}
 
 \setchapterimage{Fond_SLCI.png}
 \setchapterpreamble[u]{\margintoc}
 \chapter{Modélisation des systèmes mutliphysiques}
-
-	
-\graphicspath{{\repStyle/png/}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_01_Generalites/Cours/images/}}
 \input{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_01_Generalites/Cours/cours_v2}
+% ===================== 
+
+
+% ========= Application ========= 
+\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_01_Generalites/}
+\renewcommand{\nomExo}{Application_01_ROV}
+\graphicspath{{\repStyle/png/}{\repExo\nomExo/images}}
+
+\proffalse
+\input{\repExo\nomExo/\nomExo}
+\proftrue
+\input{\repExo\nomExo/\nomExo}
+% ==========================
+
+% ========= Application ========= 
+\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_01_Generalites/}
+\renewcommand{\nomExo}{Application_02_SeineMusicale}
+\graphicspath{{\repStyle/png/}{\repExo\nomExo/images}}
+
+\setchapterimage{fig_00.png}
+\proffalse
+\input{\repExo\nomExo/\nomExo}
+
+\setchapterimage{fig_00.png}
+\proftrue
+\input{\repExo\nomExo/\nomExo}
+% ==========================
+
+
+
+
 
 %
 %\blindtext
