@@ -173,6 +173,8 @@
 \newcommand{\nomExo}{Application_01_ROV}
 \newcounter{cptApplication}[chapter]
 \newcounter{cptTD}[chapter]
+\AtBeginEnvironment{corrige}{\small}
+
 %%%%%
 
 
@@ -266,6 +268,18 @@
 \proftrue
 \input{\repExo\nomExo/\nomExo}
 % ==========================
+
+% ========= TD ========= 
+\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_02_RevisionsSLCI/}
+\renewcommand{\nomExo}{Cy_01_Ch_02_03_TD_02_AssemblageFalcon}
+\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+
+\proffalse
+\input{\repExo\nomExo/\nomExo} 
+\proftrue
+\input{\repExo\nomExo/\nomExo}
+% ==========================
+
 
 %
 %\blindtext
