@@ -13,3 +13,5 @@
 *.bcf
 *.bbl
 *.bib
+*.gnuplot
+*.table
