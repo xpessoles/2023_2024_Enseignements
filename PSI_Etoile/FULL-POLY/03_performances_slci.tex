@@ -7,8 +7,36 @@
 \input{\repExo/\nomExo/\nomExo}
 % ===================== 
 
+
+\renewcommand{\repChap}{\repRel/PSI_Cy_02_PredictionPerfomances}
+\renewcommand{\repExo}{\repChap/Chapitre_02_Rapidite}
+% ======= COURS ======= 
+\renewcommand{\nomExo}{Cours}
+\graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
+\input{\repExo/\nomExo/\nomExo}
+% ===================== 
+
+
+\renewcommand{\repChap}{\repRel/PSI_Cy_02_PredictionPerfomances}
+\renewcommand{\repExo}{\repChap/Chapitre_03_Precision}
+% ======= COURS ======= 
+\renewcommand{\nomExo}{Cours}
+\graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
+\input{\repExo/\nomExo/\nomExo}
+% ===================== 
+
+
+\setcounter{cptApplication}{1}
+\setcounter{cptTD}{1}
+\setcounter{cptColle}{1}
+
+
+
+%%%% APPLICATIONS STABILITE %%%%%%
+\renewcommand{\repChap}{\repRel/PSI_Cy_02_PredictionPerfomances}
+\renewcommand{\repExo}{\repChap/Chapitre_01_Stabilite}
 % ========= Application ========= 
-\renewcommand{\nomExo}{Activation_01}
+\renewcommand{\nomExo}{Cy_02_Ch_01_Activation_01}
 \graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
 
 \proffalse
@@ -19,7 +47,7 @@
 % ==========================
 
 % ========= Application ========= 
-\renewcommand{\nomExo}{Application_02}
+\renewcommand{\nomExo}{Cy_02_Ch_01_Application_02}
 \graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
 
 \proffalse
@@ -29,7 +57,42 @@
 \fi
 % ==========================
 
-% ========= TD ========= 
+
+
+%%%%% EXOS PRECISION %%%%%%%%%%
+\renewcommand{\repChap}{\repRel/PSI_Cy_02_PredictionPerfomances}
+\renewcommand{\repExo}{\repChap/Chapitre_03_Precision}
+
+% ========= Application ========= 
+\renewcommand{\nomExo}{Cy_02_Ch_03_Application_01}
+\graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
+
+\proffalse
+\input{\repExo/\nomExo/\nomExo}
+\iflivret \else \proftrue
+\input{\repExo/\nomExo/\nomExo}
+\fi
+% ==========================
+
+% ========= Application ========= 
+\renewcommand{\nomExo}{Cy_02_Ch_03_Application_02_AssemblageFalcon}
+\graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
+
+\proffalse
+\input{\repExo/\nomExo/\nomExo}
+\iflivret \else \proftrue
+\input{\repExo/\nomExo/\nomExo}
+\fi
+% ==========================
+
+
+
+
+%%%%%%%%%% TD %%%%%%%%%%%%%
+
+\renewcommand{\repChap}{\repRel/PSI_Cy_02_PredictionPerfomances}
+\renewcommand{\repExo}{\repChap/Chapitre_01_Stabilite}
+ ========= TD ========= 
 \renewcommand{\nomExo}{Cy_02_Ch_01_TD_01_Drone}
 \graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
 
@@ -51,134 +114,128 @@
 \fi
 % ==========================
 
+% ========= TD ========= 
+\renewcommand{\nomExo}{Cy_02_Ch_01_TD_03_DirectionDecouplee}
+\graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
+
+\proffalse
+\input{\repExo/\nomExo/\nomExo}
+\iflivret \else \proftrue
+\input{\repExo/\nomExo/\nomExo}
+\fi
+% ==========================
+
+%%%% FIN EXOS STABILITE %%%%%%%%%%
 
 
 
-%% ======= COURS ======= 
-%\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_02_RevisionsSLCI/}
-%\renewcommand{\nomExo}{02_Modelisation_Laplace_Fiche}
-%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-%\input{\repExo\nomExo/\nomExo}
-%% ===================== 
-%
-%
-%% ======= COURS ======= 
-%\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_02_RevisionsSLCI/}
-%\renewcommand{\nomExo}{03_Modelisation_Blocs_Fiche}
-%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-%\input{\repExo\nomExo/\nomExo}
-%% ===================== 
-%
-%% ======= COURS ======= 
-%\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_02_RevisionsSLCI/}
-%\renewcommand{\nomExo}{04_Modelisation_Ordre12_Fiche}
-%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-%\input{\repExo\nomExo/\nomExo}
-%% ===================== 
-%
-%% ======= COURS ======= 
-%\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_02_RevisionsSLCI/}
-%\renewcommand{\nomExo}{05_Modelisation_Bode_Fiche}
-%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-%\input{\repExo\nomExo/\nomExo}
-%% ===================== 
-%
-%\setcounter{cptApplication}{1}
-%\setcounter{cptTD}{1}
-%
-%% ========= Application ========= 
-%\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_02_RevisionsSLCI/}
-%\renewcommand{\nomExo}{Cy_01_Ch_02_05_App_01_Bode}
-%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-%
-%\proffalse
-%\input{\repExo\nomExo/\nomExo} 
-%\iflivret \else \proftrue
-%\input{\repExo\nomExo/\nomExo}
-%\fi
-%% ==========================
-%
-%
-%% ========= TD ========= 
-%\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_02_RevisionsSLCI/}
-%\renewcommand{\nomExo}{Cy_01_Ch_02_03_TD_01_BTP}
-%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-%
-%\proffalse
-%\input{\repExo\nomExo/\nomExo} 
-%\iflivret \else \proftrue
-%\input{\repExo\nomExo/\nomExo}
-%\fi
-%% ==========================
-%
-%% ========= TD ========= 
-%\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_02_RevisionsSLCI/}
-%\renewcommand{\nomExo}{Cy_01_Ch_02_03_TD_02_AssemblageFalcon}
-%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-%
-%\proffalse
-%\input{\repExo\nomExo/\nomExo} 
-%\iflivret \else \proftrue
-%\input{\repExo\nomExo/\nomExo}
-%\fi
-%% ==========================
-%
-%% ========= TD ========= 
-%\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_02_RevisionsSLCI/}
-%\renewcommand{\nomExo}{Cy_01_Ch_02_03_TD_03_Exosquelette}
-%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-%
-%\proffalse
-%\input{\repExo\nomExo/\nomExo} 
-%\iflivret \else \proftrue
-%\input{\repExo\nomExo/\nomExo}
-%\fi
-%% ==========================
-%
-%% ========= TD ========= 
-%\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_02_RevisionsSLCI/}
-%\renewcommand{\nomExo}{Cy_01_Ch_02_Sy_TD_01_SupportRov}
-%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-%
-%\proffalse
-%\input{\repExo\nomExo/\nomExo} 
-%\iflivret \else \proftrue
-%\input{\repExo\nomExo/\nomExo}
-%\fi
-%% ==========================
-%
-%% ========= TD ========= 
-%\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_02_RevisionsSLCI/}
-%\renewcommand{\nomExo}{Cy_01_Ch_02_Sy_TD_02_Endoscope}
-%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-%
-%\proffalse
-%\input{\repExo\nomExo/\nomExo} 
-%\iflivret \else \proftrue
-%\input{\repExo\nomExo/\nomExo}
-%\fi
-%% ==========================
-%
-%% ========= TD ========= 
-%\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_02_RevisionsSLCI/}
-%\renewcommand{\nomExo}{Cy_01_Ch_02_Sy_TD_03_Freinage}
-%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-%
-%\proffalse
-%\input{\repExo\nomExo/\nomExo} 
-%\iflivret \else \proftrue
-%\input{\repExo\nomExo/\nomExo}
-%\fi
-%% ==========================
-%
-%% ========= TD ========= 
-%\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_02_RevisionsSLCI/}
-%\renewcommand{\nomExo}{Cy_01_Ch_02_Sy_TD_04_Hexapode}
-%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-%
-%\proffalse
-%\input{\repExo\nomExo/\nomExo} 
-%\iflivret \else \proftrue
-%\input{\repExo\nomExo/\nomExo}
-%\fi
-%% ==========================
+%%%%%% EXOS RAPIDITE %%%%%%%%%%
+\renewcommand{\repChap}{\repRel/PSI_Cy_02_PredictionPerfomances}
+\renewcommand{\repExo}{\repChap/Chapitre_02_Rapidite}
+% ========= TD ========= 
+\renewcommand{\nomExo}{Cy_02_Ch_02_TD_01_RobotClimber}
+\graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
+
+\proffalse
+\input{\repExo/\nomExo/\nomExo}
+\iflivret \else \proftrue
+\input{\repExo/\nomExo/\nomExo}
+\fi
+% ==========================
+
+% ========= TD ========= 
+\renewcommand{\nomExo}{Cy_02_Ch_02_TD_02_Radar}
+\graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
+
+\proffalse
+\input{\repExo/\nomExo/\nomExo}
+\iflivret \else \proftrue
+\input{\repExo/\nomExo/\nomExo}
+\fi
+% ==========================
+
+% ========= TD ========= 
+\renewcommand{\nomExo}{Cy_02_Ch_02_TD_03_TC200}
+\graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
+
+\proffalse
+\input{\repExo/\nomExo/\nomExo}
+\iflivret \else \proftrue
+\input{\repExo/\nomExo/\nomExo}
+\fi
+% ==========================
+
+
+
+%%%%% COLLE STABILITE %%%%%%
+\renewcommand{\repChap}{\repRel/PSI_Cy_02_PredictionPerfomances}
+\renewcommand{\repExo}{\repChap/Chapitre_01_Stabilite}
+
+% ========= Colle ========= 
+\renewcommand{\nomExo}{Cy_02_Ch_01_Colle_01}
+\graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
+
+\proffalse
+\input{\repExo/\nomExo/\nomExo}
+\iflivret \else \proftrue
+\input{\repExo/\nomExo/\nomExo}
+\fi
+% ==========================
+
+
+% ========= Colle ========= 
+\renewcommand{\nomExo}{Cy_02_Ch_01_Colle_02}
+\graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
+
+\proffalse
+\input{\repExo/\nomExo/\nomExo}
+\iflivret \else \proftrue
+\input{\repExo/\nomExo/\nomExo}
+\fi
+% ==========================
+
+
+% ========= Colle ========= 
+\renewcommand{\nomExo}{Cy_02_Ch_01_Colle_03}
+\graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
+
+\proffalse
+\input{\repExo/\nomExo/\nomExo}
+\iflivret \else \proftrue
+\input{\repExo/\nomExo/\nomExo}
+\fi
+% ==========================
+
+% ========= Colle ========= 
+\renewcommand{\nomExo}{Cy_02_Ch_01_Colle_04_IRM}
+\graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
+
+\proffalse
+\input{\repExo/\nomExo/\nomExo}
+\iflivret \else \proftrue
+\input{\repExo/\nomExo/\nomExo}
+\fi
+% ==========================
+
+
+% ========= Colle ========= 
+\renewcommand{\nomExo}{Cy_02_Ch_01_Colle_05_MIR_PrecisionStabilite}
+\graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
+
+\proffalse
+\input{\repExo/\nomExo/\nomExo}
+\iflivret \else \proftrue
+\input{\repExo/\nomExo/\nomExo}
+\fi
+% ==========================
+
+% ========= Colle ========= 
+\renewcommand{\nomExo}{Cy_02_Ch_01_Colle_06_Prehenseur}
+\graphicspath{{\repStyle/png}{\repExo/\nomExo/images}}
+
+\proffalse
+\input{\repExo/\nomExo/\nomExo}
+\iflivret \else \proftrue
+\input{\repExo/\nomExo/\nomExo}
+\fi
+% ==========================
