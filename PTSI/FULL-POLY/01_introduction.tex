@@ -5,18 +5,18 @@
 \graphicspath{{\repStyle/png}{\repCours/images/}}
 \input{\repCours/01_Bases.tex}
 % ===================== 
-%
+
 \setcounter{cptApplication}{1}
 \setcounter{cptTD}{1}
-%
-%% ========= Application ========= 
-%
-%\renewcommand{\nomExo}{Application_01_ROV}
-%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-%
-%\proffalse
-%\input{\repExo\nomExo/\nomExo}
-%\iflivret \else \proftrue
-%\input{\repExo\nomExo/\nomExo}
-%\fi
-%% ==========================
+
+% ========= Application ========= 
+\renewcommand{\repExo}{\repRel/Informatique/Cours/01_Bases/}
+\renewcommand{\nomExo}{Application_01}
+\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+
+\proffalse
+\input{\repExo\nomExo/\nomExo}
+\iflivret \else \proftrue
+\input{\repExo\nomExo/\nomExo}
+\fi
+% ==========================
