@@ -1,3 +1,4 @@
+// A VALIDER
 #define PWM1 9 // ou PIN 9 // 6
 #define PWM2 10 // ou 10  9 //10
 
@@ -17,7 +18,8 @@ void setup() {
   // Setup du codeur
   pinMode(VOIE_A,INPUT); 
   pinMode(VOIE_B,INPUT);  
-  attachInterrupt(digitalPinToInterrupt(VOIE_A),codeur,CHANGE);
+  attachInterrupt(digitalPinToInterrupt(VOIE_A),codeurA,CHANGE);
+  attachInterrupt(digitalPinToInterrupt(VOIE_B),codeurB,CHANGE);
  // Ouverture du port série
   Serial.begin(9600); 
 }
@@ -27,7 +29,6 @@ void loop() {
    {
      Serial.print(cpt);Serial.print(",");Serial.print(cpt);Serial.println();
      moteur(0);
-     delay(1);
    }
 
   for (int t=0; t<500; t++)
@@ -59,7 +60,7 @@ void moteur(float x){
   analogWrite(PWM2,pwm2);
   }
 
-void codeur(){
+void codeurA(){
   int a = digitalRead(VOIE_A);
   int b = digitalRead(VOIE_B);
   if(a==b){
@@ -67,5 +68,17 @@ void codeur(){
   }
   else{
     cpt--;
+  }
+}
+
+
+void codeurB(){
+  int a = digitalRead(VOIE_A);
+  int b = digitalRead(VOIE_B);
+  if(a==b){
+    cpt--;
+  }
+  else{
+    cpt++;
   }
 }
