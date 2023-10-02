@@ -1,0 +1,132 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Exercices de SII},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+
+\newcommand{\repRel}{../../..}
+\input{\repRel/Style/packages}
+\input{\repRel/Style/new_style}
+\input{\repRel/Style/macros_SII}
+\input{\repRel/Style/environment}
+\usepackage{\repRel/Style/UPSTI_pedagogique}
+
+
+\newcommand{\macrocomp}{macro_competences}
+\newcommand{\comp}{competences}
+\newcommand{\td}{fichier_td}
+\newcommand{\repExo}{dossier}
+\newcommand{\repStyle}{\repRel/Style}
+
+\def\xxYCartouche{-2.25cm}
+\def\xxYongletGarde{.5cm}
+\def\xxYOnget{.9cm}
+\def\xxonglet{\textsf{Colles}}
+
+\def\xxposongletx{2}
+\def\xxposonglettext{1.45}
+\def\xxposonglety{20}
+
+\def\xxnumchapitre{}
+\def\xxchapitre{Résistance des Matériaux}
+\def\xxtitreexo{Torseur de cohésion}
+\def\xxsourceexo{}
+\def\xxactivite{Colle 01}
+\def\xxpartie{Exercices de colles}
+\def\xxnumpartie{RdM}
+\def\discipline{Sciences \\Industrielles de \\ l'Ingénieur}
+\def\classe{\textsf{PT$\star$ -- PT}}
+\def\xxauteur{\textsl{Xavier Pessoles}}
+
+\def\xxtete{Sciences Industrielles de l'Ingénieur}
+
+\def\xxpied{%
+\xxpartie\\
+\xxchapitre%
+}
+\begin{document}
+
+\def\xxcompetences{}
+\def\xxfigures{}
+
+
+\setlength{\columnseprule}{.1pt}
+
+
+\proftrue
+
+%% COLLE 1
+\livrettrue\def\xxactivite{Colle 01}
+\newpage
+\input{\repStyle/pagegarde_TD}
+\vspace{4cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+
+%\begin{multicols}{2}
+\renewcommand{\repExo}{522_RdM}
+\graphicspath{{\repRel/Style/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/\repExo.tex}
+
+\renewcommand{\repExo}{523_RdM}
+\graphicspath{{\repRel/Style/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/\repExo.tex}
+
+\renewcommand{\repExo}{528_BrocheFraisage}
+\graphicspath{{\repRel/Style/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/\repExo.tex}
+%\end{multicols}
+
+%
+%
+%%% COLLE 2
+\livrettrue\def\xxactivite{Colle 02}
+\newpage
+\input{\repStyle/pagegarde_TD}
+\vspace{4cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+%
+%%\begin{multicols}{2}
+\renewcommand{\repExo}{524_RdM}
+\graphicspath{{\repRel/Style/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/\repExo.tex}
+
+\renewcommand{\repExo}{525_RdM}
+\graphicspath{{\repRel/Style/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/\repExo.tex}
+
+\renewcommand{\repExo}{529_Passerelle}
+\graphicspath{{\repRel/Style/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/\repExo.tex}
+%\end{multicols}
+
+
+
+%% COLLE 3
+\livrettrue\def\xxactivite{Colle 03}
+\newpage
+\input{\repStyle/pagegarde_TD}
+\vspace{4cm}
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+%\begin{multicols}{2}
+\renewcommand{\repExo}{526_RdM}
+\graphicspath{{\repRel/Style/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/\repExo.tex}
+
+\renewcommand{\repExo}{527_RdM}
+\graphicspath{{\repRel/Style/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/\repExo.tex}
+
+
+\renewcommand{\repExo}{530_BancHelico}
+\graphicspath{{\repRel/Style/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/\repExo.tex}
+%\end{multicols}
+
+\end{document}
+
+
+
