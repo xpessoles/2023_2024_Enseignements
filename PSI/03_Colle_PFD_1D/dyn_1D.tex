@@ -33,4 +33,25 @@
 \fi
 % ==========================
 
-\renewcommand{\repExo}{\repRel/PSI_Cy_01_ModelisationSystemes/Ch_03_DynamiqueEnergetique1D/}
+\renewcommand{\repExo}{\repRel/PSI_Cy_04_ModelisationDynamique/Chapitre_01_GeometrieMasses/}
+% ========= Application ========= 
+\renewcommand{\nomExo}{Cy_04_01_Activation_01_Barriere}
+\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+
+\proffalse
+\input{\repExo\nomExo/\nomExo} 
+\iflivret \else \proftrue
+\input{\repExo\nomExo/\nomExo}
+\fi
+% ==========================
+
+% ========= Application ========= 
+\renewcommand{\nomExo}{Cy_04_01_Application_01_Vilebrequin}
+\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+
+\proffalse
+\input{\repExo\nomExo/\nomExo} 
+\iflivret \else \proftrue
+\input{\repExo\nomExo/\nomExo}
+\fi
+% ==========================
