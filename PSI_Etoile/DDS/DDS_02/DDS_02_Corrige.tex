@@ -1,0 +1,71 @@
+\documentclass[10pt,fleqn]{article} % Default font size and left-justified equations
+\usepackage[%
+    pdftitle={Exercices de SII},
+    pdfauthor={Xavier Pessoles}]{hyperref}
+
+
+\newcommand{\repRel}{../../../..}
+\newcommand{\repStyle}{\repRel/Style}
+\input{\repRel/Style/packages}
+\input{\repRel/Style/new_style}
+\input{\repRel/Style/macros_SII}
+\input{\repRel/Style/environment}
+\usepackage{\repRel/Style/UPSTI_pedagogique}
+
+\newcommand{\macrocomp}{macro_competences}
+\newcommand{\comp}{competences}
+\newcommand{\td}{fichier_td}
+\newcommand{\repExos}{\repRel/ExercicesCompetences}
+\newcommand{\repExo}{dossier}
+
+
+
+
+
+\def\xxYCartouche{-2.25cm}
+\def\xxYongletGarde{.5cm}
+\def\xxYOnget{.9cm}
+
+
+\begin{document}
+
+\def\xxcompetences{}
+\def\xxfigures{}
+
+\graphicspath{{\repStyle/png/}}
+
+
+
+\setlength{\columnseprule}{.1pt}
+
+%% MODELISER
+% Page de garde
+%\chapter{Modéliser}
+\input{\repRel/Style/Entete_DDS}
+
+%\vspace{2cm}
+
+
+\def\xxpartie{}
+\def\xxnumpartie{}
+\def\xxchapitre{}
+\def\xxnumchapitre{}
+\def\xxactivite{DDS 2}
+\def\xxtitreexo{Les ptits devoirs du soir}
+\def\xxsourceexo{Jusqu'au 28 janvier 2024}
+
+\input{\repRel/Style/pagegarde_TD}
+
+\pagestyle{fancy}
+\thispagestyle{plain}
+
+\vspace{4.5cm}
+\begin{multicols}{2}
+\input{DDS_02_liste}
+\end{multicols}
+
+\newpage
+\proftrue
+\input{DDS_02_liste}
+\end{document}
+
