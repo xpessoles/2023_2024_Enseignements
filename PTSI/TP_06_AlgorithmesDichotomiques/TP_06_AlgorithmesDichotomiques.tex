@@ -8,6 +8,7 @@
 
 \newcommand{\discipline}{Informatique -- PTSI}
 \newcommand{\auteur}{Xavier Pessoles}
+\renewcommand{\auteur}{I. Cotta, X. Pessoles, V. Reydellet}
 \newcommand{\repRel}{../../..}
 
 \input{\repRel/Style/packages_v2}
@@ -107,6 +108,17 @@
 \renewcommand{\repExo}{\repRel/Informatique/Exercices/S1_04_AlgorithmesDichotomiques/}
 \renewcommand{\nomExo}{01_RechercheDichotomique}
 \graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+
+
+%\setchapterimage{fig_00.jpg}
+\chapter*{TP 6 \\ 
+Algorithmes Dichotomiques -- \ifprof Corrigé \else Sujet \fi}
+\addcontentsline{toc}{section}{TP 6 : 
+Algorithmes Dichotomiques -- \ifprof Corrigé \else Sujet \fi}
+
+\iflivret \stepcounter{cptApplication} \else
+\ifprof  \stepcounter{cptApplication} \else \fi
+\fi
 
 
 \input{\repExo\nomExo}
