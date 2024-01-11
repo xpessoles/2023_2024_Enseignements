@@ -66,6 +66,59 @@
 %
 %
 \renewcommand{\repExo}{\repRel/PSI_Cy_04_ModelisationDynamique/Chapitre_02_TorseursCinetiquesDynamiques/}
+\renewcommand{\repExo}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_08_TorseurDynamique/}
+\newcommand{\exer}{\subsection*}
+\newcounter{numques}
+
+% ========= Application ========= 
+\renewcommand{\nomExo}{05_RT}
+\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+
+\proffalse
+\input{\repExo\nomExo/\nomExo} 
+\iflivret \else \proftrue
+\input{\repExo\nomExo/\nomExo}
+\fi
+% ==========================
+\newpage
+% ========= Application ========= 
+\renewcommand{\nomExo}{06_TR}
+\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+
+\proffalse
+\input{\repExo\nomExo/\nomExo} 
+\iflivret \else \proftrue
+\input{\repExo\nomExo/\nomExo}
+\fi
+% ==========================
+
+\newpage
+% ========= Application ========= 
+\renewcommand{\nomExo}{07_RR3D}
+\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+
+\proffalse
+\input{\repExo\nomExo/\nomExo} 
+\iflivret \else \proftrue
+\input{\repExo\nomExo/\nomExo}
+\fi
+% ==========================
+
+\newpage
+% ========= Application ========= 
+\renewcommand{\nomExo}{08_RR3D}
+\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+
+\proffalse
+\input{\repExo\nomExo/\nomExo} 
+\iflivret \else \proftrue
+\input{\repExo\nomExo/\nomExo}
+\fi
+% ==========================
+
+
+\renewcommand{\repExo}{\repRel/PSI_Cy_04_ModelisationDynamique/Chapitre_02_TorseursCinetiquesDynamiques/}
+
 %% ========= Application ========= 
 %\renewcommand{\nomExo}{Cy_04_02_Activation_01_Exosquelette}
 %\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
@@ -133,21 +186,10 @@
 %\input{\repExo\nomExo/\nomExo}
 %\fi
 %% ==========================
-
-
-% ========= Application ========= 
-\renewcommand{\nomExo}{Cy_04_02_Application_04_Pendule}
-\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-
-\proffalse
-\input{\repExo\nomExo/\nomExo} 
-\iflivret \else \proftrue
-\input{\repExo\nomExo/\nomExo}
-\fi
-% ==========================
-
+%
+%
 %% ========= Application ========= 
-%\renewcommand{\nomExo}{Cy_04_02_Application_05_PompeTurbomoleculaire}
+%\renewcommand{\nomExo}{Cy_04_02_Application_04_Pendule}
 %\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
 %
 %\proffalse
@@ -156,9 +198,31 @@
 %\input{\repExo\nomExo/\nomExo}
 %\fi
 %% ==========================
-
-%% ========= TD ========= 
-%\renewcommand{\nomExo}{Cy_04_02_TD_01_Orthese_PFD}
+%
+%%% ========= Application ========= 
+%%\renewcommand{\nomExo}{Cy_04_02_Application_05_PompeTurbomoleculaire}
+%%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+%%
+%%\proffalse
+%%\input{\repExo\nomExo/\nomExo} 
+%%\iflivret \else \proftrue
+%%\input{\repExo\nomExo/\nomExo}
+%%\fi
+%%% ==========================
+%
+%%% ========= TD ========= 
+%%\renewcommand{\nomExo}{Cy_04_02_TD_01_Orthese_PFD}
+%%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+%%
+%%\proffalse
+%%\input{\repExo\nomExo/\nomExo} 
+%%\iflivret \else \proftrue
+%%\input{\repExo\nomExo/\nomExo}
+%%\fi
+%%% ==========================
+%
+%% ============ TD ============ 
+%\renewcommand{\nomExo}{Cy_04_02_TD_02_Stabilisateur_PFD}
 %\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
 %
 %\proffalse
@@ -167,42 +231,9 @@
 %\input{\repExo\nomExo/\nomExo}
 %\fi
 %% ==========================
-
-% ============ TD ============ 
-\renewcommand{\nomExo}{Cy_04_02_TD_02_Stabilisateur_PFD}
-\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-
-\proffalse
-\input{\repExo\nomExo/\nomExo} 
-\iflivret \else \proftrue
-\input{\repExo\nomExo/\nomExo}
-\fi
-% ==========================
-%
-% ============ Colle ============ 
-\renewcommand{\nomExo}{Cy_04_02_Colle_01_PorteOutil}
-\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-
-\proffalse
-\input{\repExo\nomExo/\nomExo} 
-\iflivret \else \proftrue
-\input{\repExo\nomExo/\nomExo}
-\fi
-% ==========================
-
-% ============ Colle ============ 
-\renewcommand{\nomExo}{Cy_04_02_Colle_02_Disque}
-\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-
-\proffalse
-\input{\repExo\nomExo/\nomExo} 
-\iflivret \else \proftrue
-\input{\repExo\nomExo/\nomExo}
-\fi
-% ==========================
-
+%%
 %% ============ Colle ============ 
-%\renewcommand{\nomExo}{Cy_04_02_Colle_03_Regulateur}
+%\renewcommand{\nomExo}{Cy_04_02_Colle_01_PorteOutil}
 %\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
 %
 %\proffalse
@@ -211,36 +242,82 @@
 %\input{\repExo\nomExo/\nomExo}
 %\fi
 %% ==========================
-
-% ============ Colle ============ 
-\renewcommand{\nomExo}{Cy_04_02_Colle_PFD_01_Culbuto}
-\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-
-\proffalse
-\input{\repExo\nomExo/\nomExo} 
-\iflivret \else \proftrue
-\input{\repExo\nomExo/\nomExo}
-\fi
-% ==========================
-
-
-% ============ Colle ============ 
-\renewcommand{\nomExo}{Cy_04_02_Colle_PFD_02_MesureInertie}
-\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-
-\proffalse
-\input{\repExo\nomExo/\nomExo} 
-\iflivret \else \proftrue
-\input{\repExo\nomExo/\nomExo}
-\fi
-% ==========================
-
-
-\renewcommand{\repExo}{\repRel/PSI_Cy_04_ModelisationDynamique/Chapitre_03_Methodologie/}
-
-\renewcommand{\repExo}{\repRel/PSI_Cy_04_ModelisationDynamique/Chapitre_03_Methodologie/PFD_CF/}
+%
+%% ============ Colle ============ 
+%\renewcommand{\nomExo}{Cy_04_02_Colle_02_Disque}
+%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+%
+%\proffalse
+%\input{\repExo\nomExo/\nomExo} 
+%\iflivret \else \proftrue
+%\input{\repExo\nomExo/\nomExo}
+%\fi
+%% ==========================
+%
+%%% ============ Colle ============ 
+%%\renewcommand{\nomExo}{Cy_04_02_Colle_03_Regulateur}
+%%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+%%
+%%\proffalse
+%%\input{\repExo\nomExo/\nomExo} 
+%%\iflivret \else \proftrue
+%%\input{\repExo\nomExo/\nomExo}
+%%\fi
+%%% ==========================
+%
+%% ============ Colle ============ 
+%\renewcommand{\nomExo}{Cy_04_02_Colle_PFD_01_Culbuto}
+%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+%
+%\proffalse
+%\input{\repExo\nomExo/\nomExo} 
+%\iflivret \else \proftrue
+%\input{\repExo\nomExo/\nomExo}
+%\fi
+%% ==========================
+%
+%
+%% ============ Colle ============ 
+%\renewcommand{\nomExo}{Cy_04_02_Colle_PFD_02_MesureInertie}
+%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+%
+%\proffalse
+%\input{\repExo\nomExo/\nomExo} 
+%\iflivret \else \proftrue
+%\input{\repExo\nomExo/\nomExo}
+%\fi
+%% ==========================
+%
+%
+%\renewcommand{\repExo}{\repRel/PSI_Cy_04_ModelisationDynamique/Chapitre_03_Methodologie/}
+%
+%\renewcommand{\repExo}{\repRel/PSI_Cy_04_ModelisationDynamique/Chapitre_03_Methodologie/PFD_CF/}
+%%% ========= Application ========= 
+%%\renewcommand{\nomExo}{Cy_04_03_PFD_CF_App_01_Micromoteur}
+%%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+%%
+%%\proffalse
+%%\input{\repExo\nomExo/\nomExo} 
+%%\iflivret \else \proftrue
+%%\input{\repExo\nomExo/\nomExo}
+%%\fi
+%%% ==========================
+%
+%\renewcommand{\repExo}{\repRel/PSI_Cy_04_ModelisationDynamique/Chapitre_03_Methodologie/PFD_CO/}
+%%
+%%% ========= Application ========= 
+%%\renewcommand{\nomExo}{Cy_04_03_PFD_CO_App_01_MotoWheeling}
+%%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+%%
+%%\proffalse
+%%\input{\repExo\nomExo/\nomExo} 
+%%\iflivret \else \proftrue
+%%\input{\repExo\nomExo/\nomExo}
+%%\fi
+%%% ==========================
+%
 %% ========= Application ========= 
-%\renewcommand{\nomExo}{Cy_04_03_PFD_CF_App_01_Micromoteur}
+%\renewcommand{\nomExo}{Cy_04_03_PFD_CO_App_02_BancVib}
 %\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
 %
 %\proffalse
@@ -249,11 +326,9 @@
 %\input{\repExo\nomExo/\nomExo}
 %\fi
 %% ==========================
-
-\renewcommand{\repExo}{\repRel/PSI_Cy_04_ModelisationDynamique/Chapitre_03_Methodologie/PFD_CO/}
 %
 %% ========= Application ========= 
-%\renewcommand{\nomExo}{Cy_04_03_PFD_CO_App_01_MotoWheeling}
+%\renewcommand{\nomExo}{Cy_04_03_PFD_CO_App_03_Centrifugeuse}
 %\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
 %
 %\proffalse
@@ -262,45 +337,9 @@
 %\input{\repExo\nomExo/\nomExo}
 %\fi
 %% ==========================
-
-% ========= Application ========= 
-\renewcommand{\nomExo}{Cy_04_03_PFD_CO_App_02_BancVib}
-\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-
-\proffalse
-\input{\repExo\nomExo/\nomExo} 
-\iflivret \else \proftrue
-\input{\repExo\nomExo/\nomExo}
-\fi
-% ==========================
-
-% ========= Application ========= 
-\renewcommand{\nomExo}{Cy_04_03_PFD_CO_App_03_Centrifugeuse}
-\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-
-\proffalse
-\input{\repExo\nomExo/\nomExo} 
-\iflivret \else \proftrue
-\input{\repExo\nomExo/\nomExo}
-\fi
-% ==========================
-
-% ========= Application ========= 
-\renewcommand{\nomExo}{Cy_04_03_PFD_CO_App_04_ChargementCargo}
-\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-
-\proffalse
-\input{\repExo\nomExo/\nomExo} 
-\iflivret \else \proftrue
-\input{\repExo\nomExo/\nomExo}
-\fi
-% ==========================
-
-\renewcommand{\repExo}{\repRel/PSI_Cy_04_ModelisationDynamique/Chapitre_03_Methodologie/PFD_Vehicules/}
-
-
+%
 %% ========= Application ========= 
-%\renewcommand{\nomExo}{Cy_04_03_PFD_Veh_App_01_AscBateau}
+%\renewcommand{\nomExo}{Cy_04_03_PFD_CO_App_04_ChargementCargo}
 %\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
 %
 %\proffalse
@@ -309,10 +348,35 @@
 %\input{\repExo\nomExo/\nomExo}
 %\fi
 %% ==========================
-
-
+%
+%\renewcommand{\repExo}{\repRel/PSI_Cy_04_ModelisationDynamique/Chapitre_03_Methodologie/PFD_Vehicules/}
+%
+%
+%%% ========= Application ========= 
+%%\renewcommand{\nomExo}{Cy_04_03_PFD_Veh_App_01_AscBateau}
+%%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+%%
+%%\proffalse
+%%\input{\repExo\nomExo/\nomExo} 
+%%\iflivret \else \proftrue
+%%\input{\repExo\nomExo/\nomExo}
+%%\fi
+%%% ==========================
+%
+%
+%%% ========= Application ========= 
+%%\renewcommand{\nomExo}{Cy_04_03_PFD_Veh_App_02_Clever}
+%%\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+%%
+%%\proffalse
+%%\input{\repExo\nomExo/\nomExo} 
+%%\iflivret \else \proftrue
+%%\input{\repExo\nomExo/\nomExo}
+%%\fi
+%%% ==========================
+%
 %% ========= Application ========= 
-%\renewcommand{\nomExo}{Cy_04_03_PFD_Veh_App_02_Clever}
+%\renewcommand{\nomExo}{Cy_04_03_PFD_Veh_TD_01_Segway}
 %\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
 %
 %\proffalse
@@ -321,14 +385,3 @@
 %\input{\repExo\nomExo/\nomExo}
 %\fi
 %% ==========================
-
-% ========= Application ========= 
-\renewcommand{\nomExo}{Cy_04_03_PFD_Veh_TD_01_Segway}
-\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
-
-\proffalse
-\input{\repExo\nomExo/\nomExo} 
-\iflivret \else \proftrue
-\input{\repExo\nomExo/\nomExo}
-\fi
-% ==========================
