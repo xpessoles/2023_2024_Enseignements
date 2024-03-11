@@ -13,21 +13,14 @@ Voici deux manières d'approcher le nombre $\pi$ :
 
 \begin{itemize}
 \item le produit de Wallis :
-
-\begin{equation}
+$
 \pi= 2  \prod_{i=1}^n \frac{4i^2}{4i^2-1}= 2 \times \frac{4}{3} \times \frac{16}{15}\times  \frac{36}{35}\times ...
-\label{"Wallis"}
-\end{equation}
-
+$
 \item la série de Gregory :
-
-\begin{equation}
-\pi= 4  \sum_{i=0}^n \frac{(-1)^i}{2i+1}=4 ( 1 - \frac{1}{3} + \frac{1}{5} -  \frac{1}{7} + ... )
-\label{GREG}
-\end{equation}
-
+$\pi= 4  \sum_{i=0}^n \frac{(-1)^i}{2i+1}=4 ( 1 - \frac{1}{3} + \frac{1}{5} -  \frac{1}{7} + ... )
+$
 \end{itemize}
-\bigskip
+
 
 \question{Implémenter la fonction \texttt{Wallis\_it(n:int) -> float} qui permet de calculer $\pi$ par une méthode \textbf{itérative}. Tester pour \textbf{n=10} (on trouve environ 3.0677).}
 

@@ -6,9 +6,8 @@
 %%	secnumdepth=1, % How deep to number headings. Defaults to 1 (sections)
 ]{kaobook}
 
-\newcommand{\discipline}{Informatique -- PTSI}
+\newcommand{\discipline}{Sciences Industrielles de l'Ingénieur -- PSI$\star$}
 \newcommand{\auteur}{Xavier Pessoles}
-\renewcommand{\auteur}{I. Cotta, X. Pessoles, V. Reydellet}
 \newcommand{\repRel}{../../..}
 
 \input{\repRel/Style/packages_v2}
@@ -18,9 +17,9 @@
 \usepackage{\repStyle/UPSTI_pedagogique}
 
 
-
+% Choose the language
 \frenchsetup{StandardItemLabels=true}
-
+%% \usepackage[english=british]{csquotes}	% English quotes
 
 % Load packages for testing
 %\usepackage{blindtext}
@@ -28,15 +27,14 @@
 %\usepackage{showlabels} % Uncomment to output the content of \label commands to the document where they are used
 
 % Load the bibliography package
-%\usepackage{kaobiblio}
-%\addbibresource{Cy_01_ModelisationSystemes.bib} % Bibliography file
+\usepackage{kaobiblio}
+\addbibresource{Cy_01_ModelisationSystemes.bib} % Bibliography file
 
 % Load mathematical packages for theorems and related environments
 \usepackage{kaotheorems}
 
 % Load the package for hyperreferences
 \usepackage{kaorefs}
-%\usepackage{lmodern}
 
 \graphicspath{{images/}{./}} % Paths where images are looked for
 
@@ -49,8 +47,8 @@
 %%	BOOK INFORMATION
 %%----------------------------------------------------------------------------------------
 
-\titlehead{Xavier Pessoles - Informatique en PTSI}
-\title[Xavier Pessoles - Informatique en PTSI]{Xavier Pessoles - Informatique en PTSI}
+\titlehead{Xavier Pessoles - SII en PSI*}
+\title[Xavier Pessoles - SII en PSI*]{Xavier Pessoles - SII en PSI*}
 \author[XP]{Xavier Pessoles}
 \date{\today}
 
@@ -92,47 +90,33 @@
 
 
 %%%%%
-\newcommand{\repExo}{}
-\newcommand{\nomExo}{}
+\newcommand{\repExo}{Application_01_ROV}
+\newcommand{\nomExo}{Application_01_ROV}
+\newcommand{\titrechapitre}{Banc d'essai BTP}
 %\newcounter{cptApplication}[chapter]
 %\newcounter{cptTD}[chapter]
 \AtBeginEnvironment{corrige}{\small}
 
 \livrettrue % Livrettrue :  eleve sans les corrections
-\livrettrue
+\livretfalse
 \colletrue
 %%%%%
 
 
-% ========= TD ========= 
-\renewcommand{\repExo}{\repRel/Informatique/Exercices/S1_06_Gloutons/}
-\renewcommand{\nomExo}{07_Glouton_2023}
-\graphicspath{{\repStyle/png}{\repExo\nomExo/images}{images}}
+%\input{01_multiphysique}
+%\input{02_modelisation_slci}
+%\input{03_performances_slci}
+\input{01_correcteurs}
+\input{03_methodologie}
+\input{01_tec}
 
 
-\setchapterimage{Fond_REC.jpg}
-\chapter*{TP 11 \\ 
-Fonctions Récursives -- \ifprof Corrigé \else Sujet \fi}
-\addcontentsline{toc}{section}{TP 10 : 
-Fonctions Récursives -- \ifprof Corrigé \else Sujet \fi}
+\chapter*{Passerelle }
+\renewcommand{\repExo}{529_Passerelle}
+\graphicspath{{\repRel/Style/png/}{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/images/}}
+\input{\repRel/ExercicesCompetences/C2_MettreEnOeuvreDemarche/C2_10_RdM_Cohesion/\repExo/\repExo.tex}
+%\input{03_pfd_1d}
 
-\iflivret \stepcounter{cptApplication} \else
-\ifprof  \stepcounter{cptApplication} \else \fi
-\fi
-
-\graphicspath{{\repStyle/png}{images}}
-\input{TP08_fonctions_recursives}
-%\input{\repExo\nomExo/\nomExo}
-
-
-
-%
-%\proffalse
-%\input{\repExo\nomExo/\nomExo} 
-%\iflivret \else \proftrue
-%\input{\repExo\nomExo/\nomExo}
-%\fi
-% ==========================
 
 
 
