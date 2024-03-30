@@ -1,0 +1,180 @@
+% Load the kaobook class
+\documentclass[
+	fontsize=10pt, % Base font size
+	twoside=true, % Use different layouts for even and odd pages (in particular, if twoside=true, the margin column will be always on the outside)
+	%open=any, % If twoside=true, uncomment this to force new chapters to start on any page, not only on right (odd) pages
+%%	secnumdepth=1, % How deep to number headings. Defaults to 1 (sections)
+]{kaobook}
+
+\newcommand{\discipline}{Informatique -- PTSI}
+\newcommand{\auteur}{Xavier Pessoles}
+\renewcommand{\auteur}{I. Cotta, X. Pessoles, V. Reydellet}
+\newcommand{\repRel}{../../..}
+
+\input{\repRel/Style/packages_v2}
+\newcommand{\repStyle}{\repRel/Style}
+\input{\repRel/Style/macros_SII_v2}
+\input{\repRel/Style/environment_v2}
+\usepackage{\repStyle/UPSTI_pedagogique}
+
+
+
+\frenchsetup{StandardItemLabels=true}
+
+
+% Load packages for testing
+%\usepackage{blindtext}
+%\usepackage{showframe} % Uncomment to show boxes around the text area, margin, header and footer
+%\usepackage{showlabels} % Uncomment to output the content of \label commands to the document where they are used
+
+% Load the bibliography package
+%\usepackage{kaobiblio}
+%\addbibresource{Cy_01_ModelisationSystemes.bib} % Bibliography file
+
+% Load mathematical packages for theorems and related environments
+\usepackage{kaotheorems}
+
+% Load the package for hyperreferences
+\usepackage{kaorefs}
+%\usepackage{lmodern}
+
+\graphicspath{{images/}{./}} % Paths where images are looked for
+
+\makeindex[columns=3, title=Alphabetical Index, intoc] % Make LaTeX produce the files required to compile the index
+
+
+\begin{document}
+
+%%----------------------------------------------------------------------------------------
+%%	BOOK INFORMATION
+%%----------------------------------------------------------------------------------------
+
+\titlehead{Xavier Pessoles - Informatique en PTSI}
+\title[Xavier Pessoles - Informatique en PTSI]{Xavier Pessoles - Informatique en PTSI}
+\author[XP]{Xavier Pessoles}
+\date{\today}
+
+
+\begingroup % Local scope for the following commands
+\setstretch{1} % Uncomment to modify line spacing in the ToC
+%\tableofcontents % Output the table of contents
+\endgroup
+
+%%----------------------------------------------------------------------------------------
+%%	MAIN BODY
+%%----------------------------------------------------------------------------------------
+%
+\mainmatter % Denotes the start of the main document content, resets page numbering and uses arabic numbers
+%\setchapterstyle{kao} % Choose the default chapter heading style
+%
+%\chapter{First Chapter}
+%
+%\blindtext
+%
+%\pagelayout{wide} % No margins
+%\addpart{Title of the Part}
+%\pagelayout{margin} % Restore margins
+%
+%\chapter{Second Chapter}
+
+\setchapterstyle{kao}
+
+\setcounter{margintocdepth}{\sectiontocdepth}
+\marginlayout
+\graphicspath{{\repStyle/png}}
+
+\pagestyle{xp.scrheadings}
+%\pagestyle{xp.test}
+
+
+%\input{\repStyle/Cycle_01_Entete}
+
+
+
+%%%%%
+\newcommand{\repExo}{}
+\newcommand{\nomExo}{}
+%\newcounter{cptApplication}[chapter]
+%\newcounter{cptTD}[chapter]
+\AtBeginEnvironment{corrige}{\small}
+
+\livrettrue % Livrettrue :  eleve sans les corrections
+\livrettrue
+\colletrue
+%%%%%
+
+
+
+
+
+
+
+
+%\setchapterimage{fig_00.jpg}
+\chapter*{TP 12 \\ 
+Algorithmes de tris -- \ifprof Corrigé \else Sujet \fi}
+\addcontentsline{toc}{section}{TP 8 : 
+Algorithmes de tris-- \ifprof Corrigé \else Sujet \fi}
+
+\iflivret \stepcounter{cptApplication} \else
+\ifprof  \stepcounter{cptApplication} \else \fi
+\fi
+
+
+\proftrue
+% ========= TD ========= 
+\renewcommand{\repExo}{\repRel/Informatique/Exercices/S1_08_Tris/}
+\renewcommand{\nomExo}{04_TriComptage}
+\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+\input{\repExo\nomExo/\nomExo}
+
+\renewcommand{\repExo}{\repRel/Informatique/Exercices/S1_08_Tris/}
+\renewcommand{\nomExo}{02_TriFusion}
+\graphicspath{{\repStyle/png}{\repExo\nomExo/images}}
+\input{\repExo\nomExo/\nomExo}
+
+
+\section*{Comparaison des tris}
+
+\begin{obj}
+L'objectif est de comparer les différents tris en comptant le nombre d'opérations élémentaires réalisées.
+\end{obj}
+
+\question{Copier -- coller les algorithmes de tri par sélection et de tri rapide réaliser avec Capytale.}
+
+
+\question{Copier -- coller la fonction ci-dessous dans votre script et ajouter l'appel \texttt{compteur()} une fois pour chacun des tris, au niveau de l'instruction étant réalisée le plus grand nombre de fois.}
+
+\begin{lstlisting}
+def compteur():
+    global C
+    C = C+1	
+\end{lstlisting}
+
+
+Soit les instructions suivantes.
+\begin{lstlisting}
+import matplotlib.pyplot as plt
+import random as rd
+les_i = []
+les_selection = []
+
+for i in range(1,100,10):
+    les_i.append(i)
+    L = [rd.randrange(0,i) for x in range(i)]
+    C = 0
+    tri_comptage(L.copy())
+    les_comptage.append(C)
+
+plt.plot(les_i,les_comptage,label='Comptage')
+plt.grid()
+plt.legend()
+plt.show()
+\end{lstlisting}
+
+\question{Vérifier que ces lignes sont fonctionnelles. Commenter ces lignes par blocs d'instructions.}
+
+
+
+
+\end{document}
